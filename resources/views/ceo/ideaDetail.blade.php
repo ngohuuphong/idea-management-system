@@ -14,8 +14,8 @@
       <li>AIに聞く</li>
     </ul>
 
-
-    <section class="sec bg-pale">
+<div class="detail">
+    <section class="sec bg-pale ">
       <div class="content">
 
         <div class="tab-content detail-wrap active">
@@ -104,6 +104,7 @@
           <input class="b-green" type="submit" value="承認を確定する">
         </form>
       </div>
+    </div>
     </div>
     <!-- // モーダルウィンドウの中身 -->
 
