@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\CEOController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
@@ -17,8 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//home
+Route::controller(Controller::class)->group(function () {
+    Route::get('/', 'index')->name('home');
 });
 
 
