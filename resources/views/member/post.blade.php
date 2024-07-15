@@ -1,4 +1,4 @@
-@extends('layout.member.layout')
+@extends('layouts.member.layout')
 
 @section('title', 'Post')
 

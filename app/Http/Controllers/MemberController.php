@@ -19,11 +19,11 @@ class MemberController extends Controller
 
     public function post(Request $request)
     {
-        return view('member.post', ['id' => $request->id]);
+        return view('member.postView', ['id' => $request->id]);
     }
 
     public function newPost(Request $request)
     {
-        return view('member.newPost');
+        return view('member.post');
     }
 }
