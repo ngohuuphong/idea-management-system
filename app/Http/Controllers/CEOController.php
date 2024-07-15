@@ -14,17 +14,17 @@ class CEOController extends Controller
 
     public function myPage(Request $request)
     {
-        return view('ceo.myPage');
+        return view('mypage');
     }
 
     public function idealList(Request $request)
     {
-        return view('ceo.idealList');
+        return view('ceo.idea');
     }
 
     public function ideal(Request $request)
     {
-        return view('ceo.ideal', ['id' => $request->id]);
+        return view('ceo.ideaDetail', ['id' => $request->id]);
     }
 
     public function report(Request $request)
