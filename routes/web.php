@@ -49,7 +49,7 @@ Route::group(['prefix' => 'ceo', 'as' => 'ceo.'], function () {
     Route::controller(CEOController::class)->group(function () {
         Route::get('/dashboard', 'dashboard')->name('dashboard');
         Route::get('/mypage', 'myPage')->name('myPage');
-        Route::get('/ideal', 'ideal')->name('ideal');
+        Route::get('/ideal', 'idealList')->name('idealList');
         Route::get('/ideal/{id}', 'ideal')->name('ideal')->where('id', '[0-9]+');
         Route::get('/report', 'report')->name('report');
     });
@@ -59,8 +59,8 @@ Route::group(['prefix' => 'ceo', 'as' => 'ceo.'], function () {
 Route::group(['prefix' => 'account', 'as' => 'account.'], function () {
     Route::controller(AccountController::class)->group(function () {
         Route::get('/login', 'login')->name('login');
-        Route::get('/password-reset', 'passwordReset')->name('password-reset');
-        Route::get('/signup', 'signup')->name('signup');
+        Route::get('/password-reset', 'resetPassword')->name('resetPassword');
+        Route::get('/signup', 'register')->name('register');
         Route::get('/logout', 'logout')->name('logout');
     });
 });
