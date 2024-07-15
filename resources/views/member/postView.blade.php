@@ -1,4 +1,4 @@
-@extends('layout.member.layout')
+@extends('layouts.member.layout')
 
 @section('title', 'Post')
 
@@ -7,11 +7,11 @@
 
 <nav class="nav-1">
   <div class="content">
-    <a class="logo" href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+    <a class="logo" href="{{ route('member.index') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
     <ul class="nav-li">
-      <li class="pc"><a href="{{ route('home') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
-      <li class="pc"><a href="{{ route('mypage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
+      <li class="pc"><a href="{{ route('member.index') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+      <li class="pc"><a href="{{ route('member.myPage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
       <li class="nav-news">
         <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
         <ul class="accshow">
@@ -33,8 +33,8 @@
 <nav class="nav-2">
   <div class="content">
     <ul class="nav-li">
-      <li><a class="active" href="{{ route('postView') }}">投稿する</a></li>
-      <li><a href="{{ route('ai') }}">AIに聞く</a></li>
+      <li><a class="active" href="">投稿する</a></li>
+      <li><a href="">AIに聞く</a></li>
     </ul>
     <div class="btn-wrap">
       <a class="n-btn b-wh" href="#">一時保存</a>
@@ -43,11 +43,7 @@
   </div>
 </nav>
 
-<!-- <nav class="nav-3 sp">
-  <a href="{{ route('home') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="アイデア"></a>
-  <a class="nav-plus" href="{{ route('postView') }}"><img src="{{ asset('images/ico-plus.svg') }}" alt="新規作成"></a>
-  <a href="{{ route('mypage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="マイページ"></a>
-</nav> -->
+
 
 
 <section class="sec bg-pale">
