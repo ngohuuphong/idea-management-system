@@ -1,12 +1,9 @@
-@extends('layouts.app_ceo')
+@extends('layouts.ceo')
 
 @section('title', 'アイデア')
 
 @section('content')
 
-<div id="wrapper">
-
-  @include('common.ceo_sidebar')
 
   <div class="content">
     <div class="dash-box">
@@ -36,18 +33,36 @@
           <div class="pc">投稿者</div>
           <div class="pc">承認者</div>
         </li>
-        @foreach ($ideas as $idea)
         <li>
-          <a href="#">
+          <a href="{{ route('ceo.ideal', ['id' => 0]) }}">
             <span class="ttl">
-              <h3>{{ $idea->title }}</h3>
-              <span class="date">{{ $idea->created_at->format('Y/m/d') }}　{{ $idea->category }}</span>
-              <span class="name"><span class="sp">投稿者</span>{{ $idea->user->name }}</span>
+              <h3>患者満足度向上のための待ち時間削減策</h3>
+              <span class="date">2024/05/01　サービス改善</span>
+              <span class="name"><span class="sp">投稿者</span>山田 太郎</span>
               <span class="authorizer"><span class="sp">承認者</span>高島 花子</span>
             </span>
           </a>
         </li>
-        @endforeach
+        <li>
+          <a href="#">
+            <span class="ttl">
+              <h3>セキュリティを強化するデータ保護の対策と新サービスの提案</h3>
+              <span class="date">2024/04/01　セキュリティ対策</span>
+              <span class="name"><span class="sp">投稿者</span>島田 京介</span>
+              <span class="authorizer"><span class="sp">承認者</span>高島 花子</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ttl">
+              <h3>治療時間のオンライン共有</h3>
+              <span class="date">2024/03/01　サービス改善</span>
+              <span class="name"><span class="sp">投稿者</span>長谷部 馨</span>
+              <span class="authorizer"><span class="sp">承認者</span>高島 花子</span>
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -61,6 +76,5 @@
     </div>
   </div>
 
-</div><!-- wrapper -->
 
 @endsection

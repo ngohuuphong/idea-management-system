@@ -1,15 +1,11 @@
-@extends('layouts.layout')
+@extends('layouts.ceo')
 
 @section('content')
-<div class="idea-detail detail content-w116">
 
-  <div id="wrapper">
-
-    @include('layouts.nav')
 
     <nav class="nav-2">
       <div class="content">
-        <a class="back-btn" href="{{ route('ceo.idea.index') }}">一覧に戻る</a>
+        <a class="back-btn" href="{{ route('ceo.idealList') }}">一覧に戻る</a>
       </div>
     </nav>
 
@@ -87,7 +83,7 @@
       <div class="modal_bg js-modal-close"></div>
       <div class="modal_content">
         <a class="js-modal-close close-btn" href=""><img src="{{ asset('images/modal-close.svg') }}" alt="閉じる"></a>
-        <form action="{{ route('ceo.idea.remand') }}" method="POST">
+        <form action="" method="POST">
           @csrf
           <label>このアイデアを差戻しする理由</label>
           <textarea name="remark" placeholder="差戻し理由を入力"></textarea>
@@ -101,7 +97,7 @@
       <div class="modal_bg js-modal-close"></div>
       <div class="modal_content">
         <a class="js-modal-close close-btn" href=""><img src="{{ asset('images/modal-close.svg') }}" alt="閉じる"></a>
-        <form action="{{ route('ceo.idea.approval') }}" method="POST">
+        <form action="" method="POST">
           @csrf
           <label>このアイデアを承認する理由</label>
           <textarea name="remark" placeholder="承認理由を入力"></textarea>
@@ -110,12 +106,5 @@
       </div>
     </div>
     <!-- // モーダルウィンドウの中身 -->
-
-  </div><!-- wrapper -->
-
-
-  <!-- js -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="{{ asset('js/script.js') }}"></script>
 
 @endsection

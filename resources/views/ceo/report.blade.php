@@ -1,20 +1,18 @@
-@extends('layouts.app_ceo')
+@extends('layouts.ceo')
 
 @section('title', '傾向と分析')
 
 @section('content')
 
-<div id="wrapper">
-
 <nav class="nav-1">
   <div class="content">
-    <a class="logo" href="{{ url('/ceo/dashboard') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+    <a class="logo" href="{{ route('ceo.dashboard') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
     <ul class="nav-li tab-s">
-      <li class="pc"><a href="{{ url('/ceo/dashboard') }}"><img src="{{ asset('images/ico-dashboard.svg') }}" alt="ダッシュボード">ダッシュボード</a></li>
-      <li class="pc"><a href="{{ url('/ceo/idea') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="アイデア">アイデア</a></li>
-      <li class="pc"><a class="blue" href="{{ url('/ceo/report') }}"><img src="{{ asset('images/ico-analysis_b.svg') }}" alt="傾向と分析">傾向と分析</a></li>
-      <li class="pc"><a href="{{ url('/ceo/mypage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="マイページ">マイページ</a></li>
+      <li class="pc"><a class="blue" href="{{ route('ceo.dashboard') }}"><img src="{{ asset('images/ico-dashboard_b.svg') }}" alt="">ダッシュボード</a></li>
+      <li class="pc"><a href="{{ route('ceo.idealList') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+      <li class="pc"><a href="{{ route('ceo.report') }}"><img src="{{ asset('images/ico-analysis.svg') }}" alt="">傾向と分析</a></li>
+      <li class="pc"><a href="{{ route('ceo.myPage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
       <li class="nav-news">
         <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
         <ul class="accshow">
@@ -160,17 +158,5 @@
       </ul>
     </div>
 
-	</div>
 </section>
-
-
-</div><!-- wrapper -->
-
-
-<!-- js -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="{{ asset('js/script.js') }}"></script>
-
-
-</body>
-</html>
+@endsection
