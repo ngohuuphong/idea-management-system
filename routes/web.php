@@ -24,6 +24,7 @@ Route::controller(Controller::class)->group(function () {
 });
 
 
+//member
 Route::group(['prefix' => 'member', 'as' => 'member.'], function () {
     Route::controller(MemberController::class)->group(function () {
         Route::get('/index', 'index')->name('index');
@@ -33,6 +34,7 @@ Route::group(['prefix' => 'member', 'as' => 'member.'], function () {
     });
 });
 
+//manager
 Route::group(['prefix' => 'manager', 'as' => 'manager.'], function () {
     Route::controller(ManagerController::class)->group(function () {
         Route::get('/index', 'index')->name('index');
@@ -41,6 +43,8 @@ Route::group(['prefix' => 'manager', 'as' => 'manager.'], function () {
     });
 });
 
+
+//ceo
 Route::group(['prefix' => 'ceo', 'as' => 'ceo.'], function () {
     Route::controller(CEOController::class)->group(function () {
         Route::get('/dashboard', 'dashboard')->name('dashboard');
@@ -51,6 +55,7 @@ Route::group(['prefix' => 'ceo', 'as' => 'ceo.'], function () {
     });
 });
 
+//account
 Route::group(['prefix' => 'account', 'as' => 'account.'], function () {
     Route::controller(AccountController::class)->group(function () {
         Route::get('/login', 'login')->name('login');
