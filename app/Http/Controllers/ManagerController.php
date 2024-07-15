@@ -9,17 +9,17 @@ class ManagerController extends Controller
     //
     public function index(Request $request)
     {
-        return view('member.index');
+        return view('manager.index');
     }
 
     public function myPage(Request $request)
     {
-        return view('member.myPage');
+        return view('mypage');
     }
 
     public function post(Request $request)
     {
-        return view('member.post', ['id' => $request->id]);
+        return view('manager.detail', ['id' => $request->id]);
     }
 
     

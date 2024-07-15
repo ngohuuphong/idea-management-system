@@ -7,11 +7,11 @@
   <form action="" method="POST">
     @csrf
     <label for="name">名前</label>
-    <input type="text" name="name" value="{{ auth()->user()->name }}">
+    <input type="text" name="name" value="">
     <div class="error">@error('name'){{ $message }}@enderror</div>
 
     <label for="email">メールアドレス</label>
-    <input type="text" name="email" value="{{ auth()->user()->email }}">
+    <input type="text" name="email" value="">
 
     <div class="btn-wrap">
       <input type="submit" value="変更内容を保存">

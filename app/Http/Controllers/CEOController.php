@@ -14,7 +14,7 @@ class CEOController extends Controller
 
     public function myPage(Request $request)
     {
-        return view('ceo.myPage');
+        return view('mypage');
     }
 
     public function idealList(Request $request)

@@ -19,7 +19,7 @@
 <body ontouchstart="" class="detail content-w116">
 
 <div id="wrapper">
-    @include('partials.nav')
+    @include('layouts.partials.nav')
     <!-- Content Sections -->
     @yield('content')
 
