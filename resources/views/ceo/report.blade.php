@@ -50,7 +50,7 @@
           <div class="pc">承認者</div>
         </li>
         <li>
-          <a href="#">
+          <a href="{{ route('ceo.ideal', ['id' => 0]) }}">
             <span class="ttl">
               <h3>患者満足度向上のための待ち時間削減策</h3>
               <span class="date">2024/05/01　サービス改善</span>
@@ -60,7 +60,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="{{ route('ceo.ideal', ['id' => 0]) }}">
             <span class="ttl">
               <h3>セキュリティを強化するデータ保護の対策と新サービスの提案</h3>
               <span class="date">2024/04/01　セキュリティ対策</span>
@@ -70,7 +70,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="{{ route('ceo.ideal', ['id' => 0]) }}">
             <span class="ttl">
               <h3>治療時間のオンライン共有</h3>
               <span class="date">2024/03/01　サービス改善</span>

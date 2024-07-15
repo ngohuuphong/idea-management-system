@@ -24,7 +24,7 @@
         <div>ステータス</div>
       </li>
       <li>
-        <a href="#">
+        <a href="{{ route('manager.post', ['id' => 0]) }}">
           <span class="ttl">
             <h3>患者満足度向上のための待ち時間削減策</h3>
             <div class="name">山田 太郎</div>
@@ -34,7 +34,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="{{ route('manager.post', ['id' => 0]) }}">
           <span class="ttl">
             <h3>セキュリティを強化するデータ保護の対策と新サービスの提案</h3>
             <div class="name">島田 京介</div>
@@ -44,7 +44,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="{{ route('manager.post', ['id' => 0]) }}">
           <span class="ttl">
             <h3>治療時間のオンライン共有</h3>
             <div class="name">長谷部 馨</div>
@@ -54,7 +54,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="{{ route('manager.post', ['id' => 0]) }}">
           <span class="ttl">
             <h3>リマインダーサービスの提案</h3>
             <div class="name">土田 純</div>

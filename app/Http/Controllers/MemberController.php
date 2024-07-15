@@ -14,7 +14,7 @@ class MemberController extends Controller
 
     public function myPage(Request $request)
     {
-        return view('member.myPage');
+        return view('mypage');
     }
 
     public function post(Request $request)

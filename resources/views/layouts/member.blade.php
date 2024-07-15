@@ -22,11 +22,11 @@
 
     <nav class="nav-1">
         <div class="content">
-            <a class="logo" href=""><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+            <a class="logo" href="{{ route('member.index') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
             <ul class="nav-li">
-                <li class="pc"><a href=""><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
-                <li class="pc"><a href=""><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
+                <li class="pc"><a href="{{ route('member.index') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+                <li class="pc"><a href="{{ route('member.myPage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
                 <li class="nav-news">
                     <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
                     <ul class="accshow">

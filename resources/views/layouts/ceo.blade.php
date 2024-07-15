@@ -24,10 +24,10 @@
     <a class="logo" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
     <ul class="nav-li tab-s">
-      <li class="pc"><a class="blue" href=""><img src="{{ asset('images/ico-dashboard_b.svg') }}" alt="">ダッシュボード</a></li>
-      <li class="pc"><a href=""><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
-      <li class="pc"><a href=""><img src="{{ asset('images/ico-analysis.svg') }}" alt="">傾向と分析</a></li>
-      <li class="pc"><a href=""><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
+      <li class="pc"><a class="blue" href="{{ route('ceo.dashboard') }}"><img src="{{ asset('images/ico-dashboard_b.svg') }}" alt="">ダッシュボード</a></li>
+      <li class="pc"><a href="{{ route('ceo.idealList') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+      <li class="pc"><a href="{{ route('ceo.report') }}"><img src="{{ asset('images/ico-analysis.svg') }}" alt="">傾向と分析</a></li>
+      <li class="pc"><a href="{{ route('ceo.myPage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
       <li class="nav-news">
         <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
         <ul class="accshow">

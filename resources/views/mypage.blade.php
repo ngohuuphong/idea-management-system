@@ -1,25 +1,26 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="content">
-  <h2 class="ttl-1">マイページ</h2>
+<section class="sec">
+	<div class="content">
+    <h2 class="ttl-1">マイページ</h2>
+    
+    <form class="form">
+      <label>名前</label>
+      <input type="text" name="" value="山田太郎">
+      <div class="error">内容に誤りがあります。</div>
 
-  <form action="" method="POST">
-    @csrf
-    <label for="name">名前</label>
-    <input type="text" name="name" value="">
-    <div class="error">@error('name'){{ $message }}@enderror</div>
+      <label>メールアドレス</label>
+      <input type="text" name="" value="yamada@sco.co.jp">
 
-    <label for="email">メールアドレス</label>
-    <input type="text" name="email" value="">
-
-    <div class="btn-wrap">
-      <input type="submit" value="変更内容を保存">
-      <ul>
-        <li><a href="">パスワードを変更する</a></li>
-        <li><a href="">ログアウト</a></li>
-      </ul>
-    </div>
-  </form>
-</div>
+      <div class="btn-wrap">
+        <input type="submit" value="変更内容を保存">
+        <ul>
+          <li><a href="{{ route('account.resetPassword') }}">パスワードを変更する</a></li>
+          <li><a href="#">ログアウト</a></li>
+        </ul>
+      </div>
+    </form>
+	</div>
+</section>
 @endsection

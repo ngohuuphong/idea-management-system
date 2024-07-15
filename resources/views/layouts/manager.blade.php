@@ -23,11 +23,11 @@
 
 <nav class="nav-1">
     <div class="content">
-        <a class="logo" href="{{ url('index.html') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+        <a class="logo" href="{{ route('manager.index') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
         <ul class="nav-li">
-            <li class="pc"><a href="{{ url('index.html') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
-            <li class="pc"><a href="{{ url('mypage.html') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
+            <li class="pc"><a href="{{ route('manager.index') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+            <li class="pc"><a href="{{ route('manager.myPage') }}"><img src="{{ asset('images/ico-mypage.svg') }}" alt="">マイページ</a></li>
             <li class="nav-news">
                 <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
                 <ul class="accshow">
@@ -48,7 +48,7 @@
 
 <nav class="nav-2">
     <div class="content">
-        <a class="back-btn" href="{{ url('index.html') }}">一覧に戻る</a>
+        <a class="back-btn" href="{{ url()->previous() }}">一覧に戻る</a>
         <div class="status-wrap">
             <a class="status b-bk" href="">保留</a>
             <a class="js-modal-open status b-red" href="" data-target="remand">差戻し</a>

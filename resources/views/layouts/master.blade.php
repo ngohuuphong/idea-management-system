@@ -21,14 +21,35 @@
 
 <div id="wrapper">
 
+<?php
+  $url = request()->url();
+  $urlIdeal = "" ;
+  $urlHome = "" ;
+  $urlMypage = "" ;
 
+  if (Str::contains($url, 'ceo')) {
+      $urlIdeal = route('ceo.idealList');
+      $urlHome = route('ceo.dashboard');
+      $urlMypage = route('ceo.myPage');
+  } else if (Str::contains($url, 'manager')) {
+      $urlIdeal = route('manager.index');
+      $urlHome = route('manager.index');
+      $urlMypage = route('manager.myPage');
+  } 
+  else if (Str::contains($url, 'member')) {
+      $urlIdeal = route('member.index');
+      $urlHome = route('member.index');
+      $urlMypage = route('member.myPage');
+  } 
+
+?>
 <nav class="nav-1">
   <div class="content">
-    <a class="logo" href="{{ url('index.html') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+    <a class="logo" href="{{$urlHome}}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
     <ul class="nav-li">
-      <li class="pc"><a href="{{ url('idea.html') }}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
-      <li class="pc"><a class="blue" href="{{ url('mypage.html') }}"><img src="{{ asset('images/ico-mypage_b.svg') }}" alt="">マイページ</a></li>
+      <li class="pc"><a href="{{$urlIdeal}}"><img src="{{ asset('images/ico-idea.svg') }}" alt="">アイデア</a></li>
+      <li class="pc"><a class="blue" href="{{$urlMypage}}"><img src="{{ asset('images/ico-mypage_b.svg') }}" alt="">マイページ</a></li>
       <li class="nav-news">
         <button class="accttl"><img src="{{ asset('images/ico-news.svg') }}" alt="お知らせ"></button>
         <ul class="accshow">

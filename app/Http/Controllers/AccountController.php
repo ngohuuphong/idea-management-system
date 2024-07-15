@@ -19,7 +19,7 @@ class AccountController extends Controller
 
     public function resetPassword(Request $request)
     {
-        return view('account.resetPassword');
+        return view('changePassword');
     }
 
     public function logout(Request $request)
