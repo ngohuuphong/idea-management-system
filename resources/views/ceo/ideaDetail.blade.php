@@ -5,7 +5,7 @@
 
     <nav class="nav-2">
       <div class="content">
-        <a class="back-btn" href="{{ route('ceo.idealList') }}">一覧に戻る</a>
+        <a class="back-btn" href="">一覧に戻る</a>
       </div>
     </nav>
 
