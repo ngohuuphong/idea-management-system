@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+<section class="sec bg-pale">
   <div class="content">
     <div class="dash-box">
       <h2 class="ttl-1">アイデア一覧</h2>
@@ -75,6 +75,6 @@
       </p>
     </div>
   </div>
-
+</section>
 
 @endsection

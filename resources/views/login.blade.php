@@ -34,7 +34,7 @@
 	<div class="content">
     <h2 class="ttl-1">ログイン</h2>
     
-    <form class="form"  method="post">
+    <form class="form"  method="GET" action="{{ route('ceo.dashboard') }}">
       @csrf
       <label>名前</label>
       <input type="text" name="name" value="山田太郎">
@@ -46,8 +46,8 @@
       <input type="submit" value="ログイン">
 
       <div class="other">
-        <p>パスワードを忘れた場合は <a href="">こちら</a></p>
-        <p>アカウントをお持ちでない方は <a href="">新規登録</a></p>
+        <p>パスワードを忘れた場合は <a href="{{ route('account.resetPassword') }}">こちら</a></p>
+        <p>アカウントをお持ちでない方は <a href="{{ route('account.register') }}">新規登録</a></p>
       </div>
     </form>
 	</div>

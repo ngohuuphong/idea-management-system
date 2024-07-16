@@ -9,12 +9,12 @@ class AccountController extends Controller
     //
    public function login(Request $request)
     {
-        return view('account.login');
+        return view('login');
     }
 
     public function register(Request $request)
     {
-        return view('account.register');
+        return view('signup');
     }
 
     public function resetPassword(Request $request)
@@ -24,6 +24,6 @@ class AccountController extends Controller
 
     public function logout(Request $request)
     {
-        return view('account.login');
+        return view('login');
     }
 }

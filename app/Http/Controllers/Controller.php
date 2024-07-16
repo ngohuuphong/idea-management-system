@@ -13,6 +13,6 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function index(Request $request)
     {
-        return redirect()->route('ceo.dashboard');
+        return redirect()->route('account.login');
     }
 }

@@ -27,7 +27,7 @@
 
 <nav class="nav-2">
     <div class="content">
-        <a class="back-btn" href="{{ url('index.html') }}">一覧に戻る</a>
+        <a class="back-btn" href="{{ url()->previous() }}">一覧に戻る</a>
         <div class="status-wrap">
             <a class="status b-bk" href="">保留</a>
             <a class="js-modal-open status b-red" href="" data-target="remand">差戻し</a>
