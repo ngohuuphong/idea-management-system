@@ -21,7 +21,7 @@
 <div id="wrapper">
 <nav class="nav-1">
   <div class="content">
-    <a class="logo" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
+    <a class="logo" href="{{ route('ceo.dashboard') }}"><img src="{{ asset('images/logo.png') }}" alt="Smart Checkout"></a>
 
     <ul class="nav-li tab-s">
       <li class="pc"><a class="blue" href="{{ route('ceo.dashboard') }}"><img src="{{ asset('images/ico-dashboard_b.svg') }}" alt="">ダッシュボード</a></li>
